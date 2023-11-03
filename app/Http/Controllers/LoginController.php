@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use function Laravel\Prompts\password;
+use function Laravel\Prompts\password;  
 
 class LoginController extends Controller
 {

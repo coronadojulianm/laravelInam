@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('titulo')
-Hola desde crear
+Crea Tu Publicacion
 @endsection
 <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 @section('contenido')
@@ -23,14 +23,17 @@ Hola desde crear
                 @error('titulo')
                     <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
                 @enderror
-
-                <label for="descripcion" class="mb-2 block uppercase text-gray-500 font-bold">nombre</label>
+            </div>
+            <div class="mb-5">
+                <label for="descripcion" class="mb-2 block uppercase text-gray-500 font-bold">Descripcion De Tu Publicacion</label>
                 <textarea name="descripcion" id="descripcion" placeholder="Descripcion de la publicacion" class="border p-3 w-full rounded-lg @error('descripcion') border-red-500 @enderror"> {{old('descripcion')}}</textarea>
                 
                 @error('descripcion')
                     <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{$message}}</p>
                 @enderror
             </div>
+                
+            
             <input type="submit" value="Publicar" class="bg-green-600 hover:bg-green-700 transition-colors cursor-point uppercase font-bold w-full p-3 text-white rounded-lg">
         </form>
         </div>

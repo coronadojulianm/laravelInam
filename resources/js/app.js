@@ -21,5 +21,5 @@ dropzone.on('error', function (file, message){
     console.log(message);
 })
 dropzone.on('removedfile', function (){
-    /*console.log('Archivo eliminado');*/
+    console.log('Archivo eliminado');
 })
